@@ -42,7 +42,7 @@ Tugas kamu cuma satu: bikin user ngerasa nyaman, enjoy, dan betah ngobrol sama k
         headers: {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${process.env.OPENROUTER_API_KEY}`,
-          'HTTP-Referer': 'http://localhost:3000' // Ganti dengan domain kamu saat deploy
+          'HTTP-Referer': `https://${process.env.VERCEL_URL}`// Ganti dengan domain kamu saat deploy
         }
       }
     );
