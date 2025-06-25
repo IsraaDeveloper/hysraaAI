@@ -28,9 +28,11 @@ Tugas kamu cuma satu: bikin user ngerasa nyaman, enjoy, dan betah ngobrol sama k
     ];
 
     const payload = {
-      model: "openrouter/optimus-alpha",
+      model: "qwen/qwen3-30b-a3b:free",
       messages,
-      max_tokens: 99999
+      max_tokens: 1024,
+      temperature: 0.9,
+      top_p: 0.9
     };
 
     const response = await axios.post(
